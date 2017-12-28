@@ -141,3 +141,34 @@ function validatenav(){
       toggleMenu = 0; 
   }
 }
+
+$(document).ready(function(){
+  var slideNo = 1;
+  var slideCount = 0;
+  $(".slide").css({
+    left : function(index, value){
+      slideCount = index + 1>slideCount?index + 1:slideCount;
+      return `${index*100}vw`;
+    }
+  })
+  $(".next").click(function(){
+    if(slideNo>=slideCount)
+      return;
+    slideNo++;
+    $(".slide").css({
+      left : function(index, value){
+        return `calc(${value} - 100vw)`;
+      }
+    });
+  });
+  $(".prev").click(function(){
+    if(slideNo<=1)
+      return;
+    slideNo--;
+    $(".slide").css({
+      left : function(index, value){
+        return `calc(${value} + 100vw)`;
+      }
+    });
+  });
+});

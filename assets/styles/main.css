@@ -811,6 +811,43 @@ body {
 	transform: translateY(0px);
 }
 
+/*past events*/
+
+.past-events {
+	min-height: 80vh;
+}
+
+.carousel {
+	position: relative;
+	height: 80vh;
+	background-color: #222;
+	display: block;
+	overflow-x: hidden;
+}
+.prev{
+	position: absolute;
+	top: 50%;
+	left: 2vw;
+	z-index: 99;
+}
+.next{
+	position: absolute;
+	top: 50%;
+	right: 2vw;	
+	z-index: 99;
+}
+.slide {
+	background-color: silver;
+	position: absolute;
+	display: inline;
+	height: 80vh;
+	width: 100%;
+	line-height: 80vh;
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	transition-duration: 500ms;
+}
 /*footer*/
 
 .footer {
