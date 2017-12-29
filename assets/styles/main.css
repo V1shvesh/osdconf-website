@@ -824,17 +824,47 @@ body {
 	display: block;
 	overflow-x: hidden;
 }
-.prev{
+.caption {
 	position: absolute;
-	top: 50%;
-	left: 2vw;
+	height: 40px;
+	width: 50%;
+	background-color: rgba(32,32,32,0.3);
+	border-radius: 5px;
+	z-index: 1;
+	top: 85%;
+	left: 25%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.slidenav {
+	width: 10vw;
+	height: 30%;
+	display: inline-block;
+	position: absolute;
+	top: 35%;
 	z-index: 99;
+	background-color: transparent;
+	border: none;
+	font-size: 5vw;
+	color: #008BFF;
+	transition: color 100ms;
+}
+
+.slidenav:hover {
+	color: #fff;
+}
+
+.slidenav:focus {
+	outline: none;
+}
+
+.prev{
+	left: 2vw;
 }
 .next{
-	position: absolute;
-	top: 50%;
-	right: 2vw;	
-	z-index: 99;
+	right: 2vw;
 }
 .slide {
 	background-color: silver;

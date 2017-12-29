@@ -145,30 +145,46 @@ function validatenav(){
 $(document).ready(function(){
   var slideNo = 1;
   var slideCount = 0;
+
+  // Caption For images
+  var captionContent = [
+    "First Slide",
+    "Second Slide",
+    "Third Slide",
+    "Fourth Slide"
+  ];
+  
   $(".slide").css({
     left : function(index, value){
       slideCount = index + 1>slideCount?index + 1:slideCount;
       return `${index*100}vw`;
     }
-  })
+  });
+
+  $('.caption').text(captionContent[slideNo - 1]);
+
   $(".next").click(function(){
-    if(slideNo>=slideCount)
-      return;
+    if(slideNo>=slideCount){
+      slideNo = 0;
+    }
     slideNo++;
     $(".slide").css({
       left : function(index, value){
-        return `calc(${value} - 100vw)`;
+        return `calc(${index + 1 - slideNo}*100vw)`;
       }
     });
+    $('.caption').text(captionContent[slideNo - 1]);
   });
   $(".prev").click(function(){
-    if(slideNo<=1)
-      return;
+    if(slideNo<=1){
+      slideNo = slideCount + 1;
+    }
     slideNo--;
     $(".slide").css({
       left : function(index, value){
-        return `calc(${value} + 100vw)`;
+        return `calc(${index + 1 - slideNo}*100vw)`;
       }
     });
+    $('.caption').text(captionContent[slideNo - 1]);
   });
 });
