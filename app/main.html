@@ -3,12 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>OSDConf 2018</title>
-  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERAREQEREAEREBERAREQAREQEREBERABERAREQEREAAAAAAAAAAAAAAAAAABERAAAAAAAAEREAAAAAAAAREQAAAAAAABERAAAAAAAAAAAAAAABERAAAAAAAAEREAAAAAAAAREQAAAAAAABERAAAAAAAAAAAAAAD//wAAhCEAAIQhAACEIQAAhCEAAP//AAD/4QAA/+EAAP/hAAD/4QAA//8AAPw/AAD8PwAA/D8AAPw/AAD//wAA"
+    rel="icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
+
 </head>
 
 <body>
@@ -72,47 +74,37 @@
     </div>
   </div>
 
-  <div class="main" id="home" onclick="validatenav()">
-    <div class="laptop"></div>
-    <div class="cup"></div>
-    <div class="phone"></div>
-    <div class="specs"></div>
-    <div class="pot"></div>
-    <div class="notebook"></div>
-    <div class="notepad"></div>
-    <div class="calci"></div>
-    <div class="pencil"></div>
-    <div class="pen"></div>
-    <div class="pad"></div>
-    <div class="cleanup"></div>
-    <div class="writeup">osdconf
-      <sub>2018</sub>
-      <br>
-      <span style="font-size: 25px;">10-11 March</span>
-    </div>
-  </div>
+  <main>
+    <img src="assets/images/osdconf.svg" alt="OSDConf 2018">
+    <span class="first">March 10 - 11, 2018</span>
+    <span class="second">JIIT Sector - 62, Noida</span>
+    <span class="text">A two day conference about how to
+      <strong>build</strong>,
+      <strong>collaborate</strong> and
+      <strong>deploy</strong> great software</span>
+    <a href="#">Buy Tickets</a>
+  </main>
 
   <section class="about" onclick="validatenav()" id="agenda">
-    <p class="test">What is it about?</p>
-    <br>
-    <span class="testtext">
+    <h2>What is it about?</h2>
+    <p>
       Open Source Developers' Conference is the first of its kind event, solely focused on the Open Source community. We have a
       lot in store for you whether you're just an amateur developer or a seasoned programmer. Explore and discover new trends
       in the community, get to know people actively contributing to the community and most importantly go home with more
       knowledge than you had before. We'll have tech-talks, keynotes from prominent developers, devsprint to discuss and
       develop new ideas with like-minded people and what not. So, mark your calenders for 10th and 11th of March and don't
       miss out on this unique event.
-    </span>
+    </p>
   </section>
 
   <!-- Speakers Section -->
 
   <section class="speakers" onclick="validatenav()" id="speakers-section">
-    <p class="speakers-head">Keynote Speakers</p>
+    <h2>Keynote Speakers</h2>
     <div class="speakers-body">
       <div class="speaker-card">
-        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
-        <span class="keynote-name">Saransh Barua</span>
+        <img src="" alt="" height="220px" width="180px">
+        <h3 class="keynote-name">Saransh Barua</h3>
         <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum
           nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum
           ligula, vitae vehicula ante mauris fringilla felis.</p>
@@ -129,8 +121,8 @@
       </div>
 
       <div class="speaker-card">
-        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
-        <span class="keynote-name">Saransh Barua</span>
+        <img src="" alt="" height="220px" width="180px">
+        <h3 class="keynote-name">Saransh Barua</h3>
         <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum
           nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum
           ligula, vitae vehicula ante mauris fringilla felis.</p>
@@ -147,8 +139,8 @@
       </div>
 
       <div class="speaker-card">
-        <img src="assets/images/calci.png" alt="" height="220px" width="180px">
-        <span class="keynote-name">Saransh Barua</span>
+        <img src="" alt="" height="220px" width="180px">
+        <h3 class="keynote-name">Saransh Barua</h3>
         <p class="keynote-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit nisl eget diam egestas eleifend. Duis ipsum
           nunc, consequat commodo augue sed, imperdiet blandit sem. Cras posuere, nibh vel eleifend lobortis, eros nisl elementum
           ligula, vitae vehicula ante mauris fringilla felis.</p>
@@ -163,24 +155,23 @@
             </a>
         </span>
       </div>
-
     </div>
     <span style="margin-top: 15px;">View the full list of speakers
-      <a href="speakers.html" style="text-decoration: none; color: #008BFF">here</a>
+      <a href="speakers.html" style="text-decoration: none; color: #50fa7b">here</a>
     </span>
   </section>
 
   <!-- Sponsors -->
 
   <section class="sponsors" onclick="validatenav()" id="sponsors-section">
-    <p class="sponsors-head">Our Sponsors</p>
-    <p class="sponsors-desc">
+    <h2>Our Sponsors</h2>
+    <p>
       Open Source Developers' Conference is entirely driven by volunteers. Sponsoring the event helps us to sustain, grow the conference
       along with the community. Sponsors help to make the conference affordable for community, and maintaining the inventory
       for the conference.
     </p>
-    <div class="sponsors-button">Become a Sponsor</div>
-    <section class="sponsors-grid">
+    <a href="#" class="green-link">Become a Sponsor</a>
+    <div class="sponsors-grid">
       <div class="sponsor">Sponsor's Logo</div>
       <div class="sponsor">Sponsor's Logo</div>
       <div class="sponsor">Sponsor's Logo</div>
@@ -193,14 +184,13 @@
       <div class="sponsor">Sponsor's Logo</div>
       <div class="sponsor">Sponsor's Logo</div>
       <div class="sponsor">Sponsor's Logo</div>
-    </section>
+    </div>
   </section>
 
   <!-- Schedule -->
 
   <section class="schedule" onclick="validatenav()" id="schedule-section">
-
-    <p class="schedule-head">Schedule</p>
+    <h2>Schedule</h2>
 
     <div class="timeline">
       <div class="container left">
@@ -223,65 +213,65 @@
 
   </section>
 
-  <!--Venue-->
-
-  <section class="venue" id="venue-section" onclick="validatenav()">
-    <div class="venue-overlay">
-      <p class="venue-head">Event Venue</p>
-      <div class="venue-body">
-        <p class="actual-venue">Jaypee Institute of Information technology,
-          <span class="extra-span">A-10 sector-62, Noida, India</span>
-        </p>
-        <div class="map" id="venue-map"></div>
-      </div>
-    </div>
-  </section>
-
-
   <!--Footer-->
-  <section class="footer" id="footer-section">
-    <div class="border">
-      <div class="footer-column1">
-        <img src="assets/images/osdpng.png" alt="osdc logo" height="127px">
-        <br>
-        <span class="footer-column1-text">Powered by</span>
-        <br>
-        <img src="assets/images/osdc.png" height="80px">
-      </div>
-    </div>
-    <div class="border footer-column2">
+
+  <footer>
+    <div class="other-stuff">
       <ul>
-        <li>Code of conduct</li>
-        <li>FAQ</li>
-        <li>Event terms</li>
-        <li>Past Events</li>
-        <li>Contact Us</li>
+        <li>Code of Conduct</li>
+        <li>Sponsorship Prospectus</li>
       </ul>
-    </div>
-    <div class="border footer-column3">
-      <div class="footer-address  ">
-        <span>Jaypee Institute Of Information Technology</span>
+      <ul>
+        <li>
+          <a href="https://github.com/osdc">
+            <i class="fa fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/QrjmdG2">
+            <i class="fa fa-commenting"></i> Discord
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/osdconf.in/">
+            <i class="fa fa-facebook-official"></i> Facebook
+          </a>
+        </li>
+      </ul>
+      <div class="buttons">
+        <a href="#">Buy Tickets</a>
+        <a href="#">Visit Us</a>
       </div>
-      <div class="footerlink">
-        <ul>
-          <li>
-            <i class="fa fa-github "></i>
-            <a href="https://github.com/osdc" target="_blank">Github</a>
-          </li>
-          <li>
-            <i class="fa fa-commenting "></i>
-            <a href="https://discord.gg/HJY7aSr" target="_blank">Discord</a>
-          </li>
-          <li>
-            <i class="fa fa-facebook"></i>
-            <a href="https://www.facebook.com/groups/jiitlug/" target="_blank">Facebook</a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </section>
+    <div class="code-text text-center">
+      <i class="fa fa-code"></i> with&nbsp;
+      <i class="fa fa-heart"></i> by OSDC
+    </div>
+  </footer>
 
   <!--Scripts-->
+
+  <script>
+    function loadCSS(href) {
+      var ss = window.document.createElement('link'),
+        ref = window.document.getElementsByTagName('head')[0];
+      ss.rel = 'stylesheet';
+      ss.href = href;
+      ss.media = 'only x';
+      ref.parentNode.insertBefore(ss, ref);
+
+      setTimeout(function () {
+        ss.media = 'all';
+      }, 0);
+    }
+    loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    loadCSS('https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Condensed:700');
+  </script>
+  <noscript>
+    <!-- Let's not assume anything -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Condensed:700">
+  </noscript>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/scripts/index.js"></script>
